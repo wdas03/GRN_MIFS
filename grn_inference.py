@@ -1,6 +1,8 @@
 import math
 import pandas as pd
 
+from sympy import *
+
 import itertools
 
 def get_conj_disj_combos_numeric(n):
