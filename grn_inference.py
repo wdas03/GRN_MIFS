@@ -58,7 +58,7 @@ def gene_wise_dynamics_consistency(pred, actual):
 def entropy(x):
     x_len = len(x)
     x_prob = [x.count(xs) / x_len for xs in x]
-    return -sum([xs * math.log(xs, 10) for xs in x_prob])
+    return -sum([xs * math.log(xs, 2) for xs in x_prob])
 
 # Get mutual info between two lists
 def mutual_info(x, y):
